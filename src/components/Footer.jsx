@@ -11,13 +11,13 @@ function Footer() {
                 </div>
 
                 <div aria-label="Footer navigation" className="flex flex-wrap items-center gap-4 text-sm">
-                    <Link to="/enrollment" className="transition-colors duration-200 hover:text-white">
+                    <Link to="/enrollment" className="transition-colors duration-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                         Terms
                     </Link>
-                    <Link to="/enrollment" className="transition-colors duration-200 hover:text-white">
+                    <Link to="/enrollment" className="transition-colors duration-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                         Privacy
                     </Link>
-                    <a href="#contact" className="transition-colors duration-200 hover:text-white">
+                    <a href="#contact" className="transition-colors duration-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
                         Contact
                     </a>
                 </div>
