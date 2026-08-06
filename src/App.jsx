@@ -1,12 +1,21 @@
 
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Enrollment from './pages/Enrollment'
+import NotFound from './pages/NotFound'
 
+function App() {
   return (
-    <>
-        <h1 class="text-3xl text-amber-400 font-bold underline">
-    Hello world!
-  </h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/enrollment" element={<Enrollment />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
